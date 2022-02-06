@@ -1,5 +1,7 @@
+/* geniral */
 *{ box-sizing: border-box;}
-:root{--main-color :#4813dbaf;}
+:root{--main-color :#067f8a;}
+body{ font-family: 'Ubuntu', geneva, tahoma, sans-serif}
 
 /*framework responsive */
 .container {
@@ -36,14 +38,7 @@
 }
 
 
-body{
-    font-family: 'Ubuntu', geneva, tahoma, sans-serif;
-}
-
 /*  ----- header  ----*/
-.heading{
-    position: relative;
-}
 .header{
     background-image: url("../images/img1.jpg");
     background-size: cover;
@@ -70,8 +65,8 @@ body{
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.header .intro h1{}
-.header .intro p{}
+.header .intro h1{font-size: 70px;}
+.header .intro p{font-size: 20px;}
 
 
 /* ---- navbar  ---- */
@@ -80,47 +75,40 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #f00;
-    z-index: 2;
-    padding: 0;
-    opacity: .5;
+    height: 60px;
+    background-color: #2a09418e;
 }
-.navbar .nav{
-    position: flex;
-    
-}
-.navbar .nav .logo{
-    text-align: left;
-    font-size: 25px;
-    width: 20%;
+.navbar .container{
+    display: grid;
+    grid-template-columns: 25% 75%;
     text-align: center;
-    padding-top: 20px;
-}
-.navbar .nav .logo h3{
     color: #fff;
-    padding: 0;
-    margin: 0;
 }
-.navbar .nav ul{
+.navbar h3{
+    font-family: 'Syne Tactile';
+    font-size: 30px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-shadow: 1px 1px 1px #000;
+}
+.navbar h3 span{ color: var(--main-color); font-size: 35px;}
+.navbar ul{
     text-align: right;
-    padding: 0;
-    margin: 0;
-    padding-bottom: 20px;
 }
-.navbar .nav ul li{
+.navbar ul li{
     display: inline-block;
     margin-right: 15px;
     padding: 0;
 }
-.navbar .nav ul li a{
+.navbar ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 20px;
-    padding: 0;
-    margin: 0;
+    text-shadow: 1px 1px 1px #000;
 }
-.navbar .nav ul li a:hover{
-    color: green;
+.navbar ul li a:hover{
+    color: var(--main-color);
     transition: all .3s ease-in-out;
 }
 .sitting-box{
