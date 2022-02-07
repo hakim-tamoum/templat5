@@ -118,5 +118,16 @@ body{ font-family: 'Ubuntu', geneva, tahoma, sans-serif}
 }
 /*  about   -- */
 #about{height: 300px;}
-#testimonie{height: 300px; background-color: #067f8a;}
+#testimonie{
+    height: 300px;
+    background: url("../images/testimonails.jpg") fixed;
+    background-size: cover;
+}
 #contact{height: 300px;}
+
+/* contact  */
+.variable-width{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
