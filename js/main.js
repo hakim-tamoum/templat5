@@ -4,7 +4,7 @@
     let img = ['img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img4.jpg'];
     setInterval( ()=> {
         let nbr = Math.floor(Math.random()*img.length);
-        hdr.style.backgroundImage = `url("../img/${img[nbr]}")`;
+        hdr.style.cssText = `background-image: url("images/'${img[nbr]}' ")`;
     }, 4000);
 
     //scroll plugin
